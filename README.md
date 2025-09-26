@@ -6,11 +6,11 @@ This is a containerized Linux desktop (running [XFCE4](https://xfce.org)) access
 
 Try using Docker:
 ```
-docker run -p 3001:3001 ghcr.io/mcp-getgather/linux-desktop-live
+docker run -p 3001:3001 ghcr.io/ariya/linux-desktop-live
 ```
 or Podman:
 ```
-podman run -p 3001:3001 ghcr.io/mcp-getgather/linux-desktop-live
+podman run -p 3001:3001 ghcr.io/ariya/linux-desktop-live
 ```
 Then open `localhost:3001` in your browser.
 
