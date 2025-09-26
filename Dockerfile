@@ -9,6 +9,9 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
     x11vnc \
     xfce4 \
     xfce4-goodies \
+    xfconf \
+    tar \
+    gtk2-engines-murrine \
     dbus-x11 \
     novnc \
     websockify \
@@ -16,6 +19,8 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
     firefox-esr
 
 WORKDIR /app
+
+RUN curl -L https://github.com/B00merang-Project/Windows-10/archive/refs/heads/master.tar.gz -o /app/Theme.tar.gz
 
 COPY entrypoint.sh /app/entrypoint.sh
 
